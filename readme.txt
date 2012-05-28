@@ -1,7 +1,7 @@
 === GD bbPress Widgets ===
 Contributors: GDragoN
 Donate link: http://www.dev4press.com/
-Version: 1.0.0
+Version: 1.0.1
 Tags: bbpress, tools, gdragon, dev4press, forums, forum, topic, reply, widget, widgets
 Requires at least: 3.2
 Tested up to: 3.4
@@ -20,8 +20,8 @@ Collection of widgets for bbPress plugin powered forums. Currently included widg
 Supported languages: English.
 
 = Important URL's =
-[Plugin Home](http://www.dev4press.com/plugins/gd-bbpress-tools/) |
-[Support Forum](http://www.dev4press.com/forums/forum/free-plugins/gd-bbpress-tools/) |
+[Plugin Home](http://www.dev4press.com/plugins/gd-bbpress-widgets/) |
+[Support Forum](http://www.dev4press.com/forums/forum/free-plugins/gd-bbpress-widgets/) |
 [Feedburner](http://feeds2.feedburner.com/dev4press) |
 [Twitter](http://twitter.com/milangd) |
 [Facebook Page](http://www.facebook.com/dev4press)
@@ -29,7 +29,10 @@ Supported languages: English.
 = More from dev4Press.com for bbPress =
 * [GD bbPress Attachments](http://wordpress.org/extend/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD bbPress Tools](http://www.gdcpttools.com/features/bbpress-tools/) - bbcodes, signature, custom views and more
+
+= Premium dev4Press.com plugins for bbPress =
 * [GD CPT Tools Pro](http://www.gdcpttools.com/features/bbpress-integration/) - meta box for the topic and reply form
+* [GD bbPress Toolbox Pro](http://www.gdbbpbox.com/) - our free bbPress plugins in one plus more
 
 == Installation ==
 = General Requirements =
@@ -61,12 +64,16 @@ No. Plugin requires bbPress 2.0 or higher plugin.
 * English
 
 == Changelog ==
+= 1.0.1 =
+* Improvements to readme file
+* Fixed couple of warnings
+
 = 1.0.0 =
 * First official release
 
 == Upgrade Notice ==
-= 1.0.0 =
-First official release.
+= 1.0.1 =
+Improvements to readme file. Fixed couple of warnings.
 
 == Screenshots ==
 1. Plugin Settings

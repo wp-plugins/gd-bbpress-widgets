@@ -3,6 +3,7 @@
 if (!defined('ABSPATH')) exit;
 
 class d4pbbpWidget_searchtopics extends gdr2_Widget {
+    var $folder_name = 'd4p-bbpress-searchtopics';
     var $widget_base = 'd4p_bbw_searchtopics';
     var $widget_domain = 'd4pbbw_widgets';
     var $cache_prefix = 'd4pbbw';

@@ -66,6 +66,8 @@ if (!class_exists("gdr2_Widget")) {
         var $widget_domain = "gdr2_widgets";
         var $widget_id;
 
+        var $folder_name = 'gdr2-widget';
+
         var $cache_key = "";
         var $cache_prefix = "gdrw";
         var $cache_active = false;

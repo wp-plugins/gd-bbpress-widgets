@@ -2,9 +2,9 @@
 
 class gdbbPressWidgets_Defaults {
     var $default_options = array(
-        'version' => '1.0.0',
-        'date' => '2012.05.17.',
-        'build' => 866,
+        'version' => '1.0.1',
+        'date' => '2012.05.28.',
+        'build' => 900,
         'status' => 'Stable',
         'product_id' => 'gd-bbpress-widgets',
         'edition' => 'free',
