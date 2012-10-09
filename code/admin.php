@@ -15,7 +15,26 @@ class gdbbW_Admin {
     public function load() {
         add_action('admin_init', array(&$this, 'admin_init'));
         add_action('admin_menu', array(&$this, 'admin_menu'));
+
         add_filter('plugin_action_links', array(&$this, 'plugin_actions'), 10, 2);
+        add_filter('plugin_row_meta', array(&$this, 'plugin_links'), 10, 2);
+    }
+
+    function upgrade_notice() {
+        global $gdbbpress_widgets;
+
+        if ($gdbbpress_widgets->o['upgrade_to_pro_102'] == 1) {
+            $no_thanks = add_query_arg('proupgradebbw', 'hide');
+
+            echo '<div class="updated d4p-updated">';
+                echo __("Thank you for using this plugin. Please, take a few minutes and check out the GD bbPress Toolbox Pro plugin with many new and improved features.", "gd-bbpress-widgets");
+                echo '<br/>'.__("Buy GD bbPress Toolbox Pro version or Dev4Press Plugins Pack and get 15% discount using this coupon", "gd-bbpress-widgets");
+                echo ': <strong style="color: #c00;">GDBBPTOPRO</strong><br/>';
+                echo '<strong><a href="http://www.gdbbpbox.com/" target="_blank">'.__("Official Website", "gd-bbpress-widgets")."</a></strong> | ";
+                echo '<strong><a href="http://d4p.me/247" target="_blank">'.__("Dev4Press Plugins Pack", "gd-bbpress-widgets")."</a></strong> | ";
+                echo '<a href="'.$no_thanks.'">'.__("Don't display this message anymore", "gd-bbpress-widgets")."</a>.";
+            echo '</div>';
+        }
     }
 
     public function admin_init() {
@@ -26,6 +45,17 @@ class gdbbW_Admin {
         wp_enqueue_style('gd-bbpress-widgets-admin', GDBBPRESSWIDGETS_URL."css/gd-bbpress-widgets_widgets.css", array(), GDBBPRESSWIDGETS_VERSION);
         if ($this->admin_plugin) {
             wp_enqueue_style('gd-bbpress-widgets', GDBBPRESSWIDGETS_URL."css/gd-bbpress-widgets_admin.css", array(), GDBBPRESSWIDGETS_VERSION);
+        }
+
+        if (isset($_GET['proupgradebbw']) && $_GET['proupgradebbw'] == 'hide') {
+            global $gdbbpress_widgets;
+
+            $gdbbpress_widgets->o['upgrade_to_pro_102'] = 0;
+
+            update_option('gd-bbpress-widgets', $gdbbpress_widgets->o);
+
+            wp_redirect(remove_query_arg('proupgradebbw'));
+            exit;
         }
     }
 
@@ -44,9 +74,18 @@ class gdbbW_Admin {
     }
 
     public function plugin_actions($links, $file) {
-        if ($file == 'gd-bbpress-widgets/gd-bbpress-widgets.php' ){
+        if ($file == 'gd-bbpress-widgets/gd-bbpress-widgets.php'){
             $settings_link = '<a href="edit.php?post_type=forum&page=gdbbpress_widgets">'.__("Settings", "gd-bbpress-widgets").'</a>';
             array_unshift($links, $settings_link);
+        }
+
+        return $links;
+    }
+
+    function plugin_links($links, $file) {
+        if ($file == 'gd-bbpress-widgets/gd-bbpress-widgets.php'){
+            $links[] = '<a href="edit.php?post_type=forum&page=gdbbpress_tools&tab=faq">'.__("FAQ", "gd-bbpress-widgets").'</a>';
+            $links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="http://www.gdbbpbox.com/">'.__("Upgrade to GD bbPress Toolbox Pro", "gd-bbpress-widgets").'</a>';
         }
 
         return $links;

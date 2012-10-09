@@ -2,16 +2,21 @@
 
 $current = isset($_GET['tab']) ? $_GET['tab'] : 'widgets';
 
+if ($current != 'toolbox') {
+    $this->upgrade_notice();
+}
+
 $tabs = array(
     'widgets' => __("Settings", "gd-bbpress-widgets"), 
     'faq' => __("FAQ", "gd-bbpress-widgets"), 
+    'toolbox' => __("Toolbox", "gd-bbpress-widgets"), 
     'd4p' => __("Dev4Press", "gd-bbpress-widgets"), 
     'about' => __("About", "gd-bbpress-widgets")
 );
 
 ?>
 <div class="wrap">
-    <h2>GD bbPress Tools</h2>
+    <h2>GD bbPress Widgets</h2>
     <div id="icon-themes" class="icon32"><br></div>
     <h2 class="nav-tab-wrapper">
     <?php

@@ -1,10 +1,10 @@
 === GD bbPress Widgets ===
 Contributors: GDragoN
-Donate link: http://www.dev4press.com/
-Version: 1.0.1
+Donate link: http://www.gdbbpbox.com/
+Version: 1.0.2
 Tags: bbpress, tools, gdragon, dev4press, forums, forum, topic, reply, widget, widgets
 Requires at least: 3.2
-Tested up to: 3.4
+Tested up to: 3.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -57,13 +57,25 @@ Open the Forums menu, and you will see Widgets item there. This will open a pane
 * Will this plugin work with standalone bbPress instalation?
 No. This plugin requires the plugin versions of bbPress 2.0 or higher.
 
-* Will this plugin work with bbPress that is part of BuddyPress plugin?
+* Does this plugin work with bbPress that is part of BuddyPress plugin?
 No. Plugin requires bbPress 2.0 or higher plugin.
+
+* Does this plugin work with bbPress 2.1 used as site wide forums for BuddyPress plugin?
+Yes. But, make sure to enable 'Always Include' option for JavaScript and CSS.
 
 == Translations ==
 * English
+* Serbian
+* German: David Decker - http://deckerweb.de/
 
 == Changelog ==
+= 1.0.2 =
+* Added Serbian Translation
+* Added German Translation
+* Expanded list of FAQ entries
+* Panel for upgrade to GD bbPress Toolbox
+* Added few missing translation strings
+
 = 1.0.1 =
 * Improvements to readme file
 * Fixed couple of warnings
@@ -72,8 +84,8 @@ No. Plugin requires bbPress 2.0 or higher plugin.
 * First official release
 
 == Upgrade Notice ==
-= 1.0.1 =
-Improvements to readme file. Fixed couple of warnings.
+= 1.0.2 =
+Added Serbian and German Translation. Expanded list of FAQ entries. Panel for upgrade to GD bbPress Toolbox. Added few missing translation strings.
 
 == Screenshots ==
 1. Plugin Settings
