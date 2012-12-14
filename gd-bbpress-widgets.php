@@ -4,7 +4,7 @@
 Plugin Name: GD bbPress Widgets
 Plugin URI: http://www.dev4press.com/plugin/gd-bbpress-widgets/
 Description: Collection of widgets for bbPress plugin powered forums. Currently includes: search topics and expanded topic views list.
-Version: 1.0.2
+Version: 1.0.3
 Author: Milan Petrovic
 Author URI: http://www.dev4press.com/
 

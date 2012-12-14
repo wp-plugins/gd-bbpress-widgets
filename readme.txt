@@ -1,7 +1,7 @@
 === GD bbPress Widgets ===
 Contributors: GDragoN
 Donate link: http://www.gdbbpbox.com/
-Version: 1.0.2
+Version: 1.0.3
 Tags: bbpress, tools, gdragon, dev4press, forums, forum, topic, reply, widget, widgets
 Requires at least: 3.2
 Tested up to: 3.5
@@ -69,6 +69,9 @@ Yes. But, make sure to enable 'Always Include' option for JavaScript and CSS.
 * German: David Decker - http://deckerweb.de/
 
 == Changelog ==
+= 1.0.3 =
+* Screenshots removed from plugin and added into assets directory
+
 = 1.0.2 =
 * Added Serbian Translation
 * Added German Translation
@@ -84,8 +87,8 @@ Yes. But, make sure to enable 'Always Include' option for JavaScript and CSS.
 * First official release
 
 == Upgrade Notice ==
-= 1.0.2 =
-Added Serbian and German Translation. Expanded list of FAQ entries. Panel for upgrade to GD bbPress Toolbox. Added few missing translation strings.
+= 1.0.3 =
+Screenshots removed from plugin and added into assets directory.
 
 == Screenshots ==
 1. Plugin Settings
